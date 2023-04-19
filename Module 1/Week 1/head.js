@@ -1,9 +1,9 @@
 /* 
-Output:  Create a function head which returns the first item in the array.
+Goal:  
+- Create a function head which returns the first item in the array 
+- Compare the first item with the expected value
+- Return a message (YES, NO) 
 */
-
-// Load the full build.
-var _ = require('lodash');
 
 
 const assertEqual = function(values, expected) {

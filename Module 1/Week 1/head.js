@@ -6,9 +6,19 @@ Goal:
 */
 
 
-const assertEqual = function(values, expected) {
-  console.log(_head(values));
+function head(values){
+  if (values != null){ 
+    return values[0]
+  }
+  else {
+    return '';
+  }
+}
 
+
+const assertEqual = function(actual, expected) {
+
+// get first value 
   if (actual === expected) {
     console.log("🛑🛑🛑 Assertion Passed: Actual " + actual + " ==== " + " Expected " + expected );
   }

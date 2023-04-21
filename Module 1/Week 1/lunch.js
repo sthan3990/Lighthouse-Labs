@@ -22,16 +22,16 @@ const whatToDoForLunch = function(hungry, availableTime) {
     // between 20 - 30 minutes 
   if (hungry === true && availableTime < 20)
   {
-    console.log("Pick up a snack or grab something you have ready at home.");
+    console.log("Pick up a snack or grab something you have ready at home. \n");
   }
   // greater than 30 minutes
   else if (hungry === true && availableTime >= 20 && availableTime <= 30)
   {
-    console.log("you deserve a break and should take time to cook a tasty meal");
+    console.log("you deserve a break and should take time to cook a tasty meal \n");
   }
   else 
   {
-    console.log("reconsider how much time we actually have to spare");
+    console.log("reconsider how much time we actually have to spare \n");
   }
 }
 

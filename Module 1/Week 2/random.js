@@ -13,3 +13,20 @@ var nyc = {
 
 console.log(nyc.get('boroughs]'));
 
+
+
+const myName = function(name) {
+
+  // change this to turnery operator 
+  if (name === `Alvin`){
+
+    console.log(`hello`);
+  }
+  else{
+    console.log(`goodbyte`)
+  }
+  name === 'Alvin' ? console.log(`Hello'`) : console.log(`Goodbyte`);
+  
+}
+
+myName(`Alvin`);

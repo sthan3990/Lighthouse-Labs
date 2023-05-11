@@ -3,13 +3,17 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# User-specific folders
+# matches any files and directories with the name test
+w3-test
+
 # User-specific files
 *.rsuser
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
-w3-test
+
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -349,5 +353,3 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-Module 1/w3-test
-Module 1/w3-test

@@ -1,6 +1,7 @@
 /*  Given an array with other arrays inside, it can flatten it into a single-level array.
 */
 
+
 const assertArrayEqual = (array1, array2) => {
 
   for (let i = 0; i < array1.length; i++) {

@@ -1,24 +1,30 @@
-const bestTVShowsByGenre = { 
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
+/* Goal 
+Implement the function findKeyByValue which takes in an object and a value. It should scan the object and return the first key which contains the given value. If no key with that given value is found, then it should return undefined.
+*/
+
+// import the assertEqual function 
+const assertEqual = require('./assertequal.js');
+
+const bestTVShowsByGenre = {
+  sciFi: `The Expanse`,
+  comedy: `Brooklyn Nine-Nine`,
+  drama: `The Wire`
 };
 
-function findKeyByValue(TVShows, tvKey){
+
+const findKeyByValue = (TVShows, tvKey) => {
 
   // Iterate through the object
-   for (const key in TVShows){
+  for (let key in TVShows) {
 
     let keyValue = TVShows[key];
 
     if (tvKey === keyValue) {
       return `${key}`;
     }
-     
-   }
 
-}
+  }
+};
 
-console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
-
-console.log(findKeyByValue(bestTVShowsByGenre, "That '70s Show"));
+assertEqual(findKeyByValue(bestTVShowsByGenre, `The Wire`), `drama`);
+assertEqual(findKeyByValue(bestTVShowsByGenre, `That '70s Show`), undefined);

@@ -5,7 +5,9 @@
 
 # User-specific folders
 # matches any files and directories with the name test
-w3-test
+*.DS_Store
+*.eslintrc.cjs 
+*.json
 
 # User-specific files
 *.rsuser

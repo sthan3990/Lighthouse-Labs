@@ -8,6 +8,7 @@
 *.DS_Store
 *.eslintrc.cjs 
 *.json
+w3-test
 
 # Visual Studeio Related
 .vscode/*
@@ -369,3 +370,4 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+

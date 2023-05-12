@@ -2,7 +2,7 @@
 30 Week Web Dev Flex  
 
 ## Pre-Work
-*[JavaScript Fundamentals](https://github.com/sthan3990/Lighthouse-Labs/tree/main/Module%200/prework%20js-fundamentals) 
+* [JavaScript Fundamentals](https://github.com/sthan3990/Lighthouse-Labs/tree/main/Module%200/prework%20js-fundamentals) 
 
 ## Library 
 

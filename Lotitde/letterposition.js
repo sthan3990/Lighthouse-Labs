@@ -29,5 +29,5 @@ const letterPositions = (sentence) => {
 
 };
 
+module.exports = letterPositions;
 
-console.log(assertArrayEqual(letterPositions("hello").e, [0]));

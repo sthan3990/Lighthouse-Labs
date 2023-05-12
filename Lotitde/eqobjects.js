@@ -3,8 +3,7 @@ Goal
 Implement the definition for function eqObjects which will take in two objects and returns true or false, based on a perfect match.
 */
 
-const assertEqual = require('./assertequal.js');
-const eqArrays = require('./eqarrays.js');
+const eqArrays = require('./eqarrays');
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
@@ -35,15 +34,8 @@ const eqObjects = function (object1, object2) {
     }
 
   }
-
   return true;
 };
 
 
-const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
-const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
-console.log(eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject)); // => true
-
-const longSleeveMultiColorShirtObject= { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
-eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject); // => false
-
+module.exports = eqObjects;

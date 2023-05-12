@@ -1,0 +1,15 @@
+{
+  "name": "lotitde",
+  "version": "1.0.0",
+  "description": "",
+  "main": "assertarraysequal.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^9.2.2"
+  }
+}

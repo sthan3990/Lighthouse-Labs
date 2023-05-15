@@ -9,6 +9,7 @@
 *.eslintrc.cjs 
 *.json
 w3-test
+w4-test
 
 # Visual Studeio Related
 .vscode/*

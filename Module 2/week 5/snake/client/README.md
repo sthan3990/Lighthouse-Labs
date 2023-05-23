@@ -11,7 +11,7 @@ This is simply a multiplayer take on the genre.
 Before you can run this client, you will need to be running the server side which you can download and install from here. 
 
 ## Final Product
-!(#snek.gif)
+![snek.gif](https://github.com/sthan3990/Lighthouse-Labs/blob/main/Module%202/week%205/snake/client/snek.gif)
 
 ## Getting Started
 

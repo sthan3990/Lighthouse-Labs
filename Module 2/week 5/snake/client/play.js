@@ -1,15 +1,11 @@
-// import Node's net lib 
-const net = require('net');
-
 // import user made libs
-const { setupInput } = require('./input');
+const { setupInput } = require(`./input`);
 const { connect } = require('./client');
 
 // from the original fork
 const { Game } = require('./src/Game')
 const { UserInterface } = require('./src/UserInterface')
-const { RemoteInterface } = require('./src/RemoteInterface')
-const game = new Game(new UserInterface(), new RemoteInterface())
+const game = new Game(new UserInterface())
 
 console.log("Connecting ...");
 

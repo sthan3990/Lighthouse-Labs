@@ -1,15 +1,12 @@
-// import user made libs
-const { setupInput } = require('./input');
-const { connect } = require('./client');
-
 // Used by client.js
 const ipAddress = `localhost`;
 const ipPort = `8080`;
-
 const userName = `SHAN`;
+const randomMessage = `blah snakesss`;
 
 module.exports = {
   ipAddress,
   ipPort,
-  userName
+  userName,
+  randomMessage,
 };

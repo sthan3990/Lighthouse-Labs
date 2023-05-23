@@ -4,9 +4,9 @@ const server = net.createServer();
 
 server.on("connection", (client) => {
 
-  console.log("New client connected!");
+ // console.log("New client connected!");
 
-  client.write("Hello from the server!");
+  // client.write("Hello from the server!");
 
   client.setEncoding("utf8"); // interpret data as text
 

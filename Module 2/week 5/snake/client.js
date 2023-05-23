@@ -14,7 +14,7 @@ const connect = function () {
 
   conn.on("connect", () => {
 
-    console.log('Successfully connected to the game server');
+    // console.log('Successfully connected to the game server');
 
     conn.write(`Name: ${userName}`);
 
@@ -22,7 +22,7 @@ const connect = function () {
 
     //event handler that receives data from the server to the client
     conn.on('data', (data) => {
-      console.log('Server says: ', data)
+     // console.log('Server says: ', data)
     });
   
     // interpret incoming data as text

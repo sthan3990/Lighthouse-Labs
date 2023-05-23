@@ -36,12 +36,12 @@ const handleUserInput = function (key) {
       break;
 
     case `s`:
-      connection.write(`Move LEFT`);
+      connection.write(`Move DOWN`);
 
       break;
 
     case `d`:
-      connection.write(`Move LEFT`);
+      connection.write(`Move RIGHT`);
 
       break;
 

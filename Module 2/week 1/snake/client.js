@@ -1,7 +1,6 @@
 const net = require("net");
 
-const ipAddress = `localhost`;
-const ipPort = `8080`;
+const { ipAddress, ipPort, userName } = require("./constants");
 
 // establishes a connection with the game server
 const connect = function () {
@@ -17,22 +16,7 @@ const connect = function () {
 
     console.log('Successfully connected to the game server');
 
-    conn.write("Name: SNK");
-
-    // setTimeout(50);
-
-
-    // setTimeout(50);
-
-    // conn.write("Move: Down");
-
-    // setTimeout(50);
-
-    // conn.write("Move: Left");
-
-    // setTimeout(50);
-
-    // conn.write("Move: Right");
+    conn.write(`Name: ${userName}`);
 
   });
 
@@ -43,7 +27,7 @@ const connect = function () {
   
     // interpret incoming data as text
     conn.setEncoding('utf8');
-    
+
 
   return conn;
 };

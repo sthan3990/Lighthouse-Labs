@@ -47,8 +47,6 @@ const handleUserInput = function (key) {
 
     default:
       break;
-
-
   }
 
 };

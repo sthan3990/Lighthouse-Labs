@@ -18,15 +18,15 @@ const setupInput = function (conn) {
 
 const handleUserInput = function (key) {
 
-  switch(key) {
-    
+  switch (key) {
+
     // Handle CTRL+C User Input
     // \u0003 maps to ctrl+c input
     case `\u0003`:
       connection.write(`Exiting Program. Bye.`);
       process.exit();
 
-    case `w` :
+    case `w`:
       connection.write(`Move: Up`);
       break;
 
@@ -37,7 +37,7 @@ const handleUserInput = function (key) {
     case `f`:
       connection.write(`${randomMessage}`);
       break;
-      
+
     case `s`:
       connection.write(`Move DOWN`);
       break;
@@ -47,10 +47,10 @@ const handleUserInput = function (key) {
       break;
 
     default:
-     
+
       break;
   }
 
 };
 
-module.exports = {setupInput};
+module.exports = { setupInput };

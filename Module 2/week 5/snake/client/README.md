@@ -2,62 +2,21 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![snekjs on NPM](https://img.shields.io/npm/v/snekjs.svg?color=green&label=snekjs)](https://www.npmjs.com/package/snekjs)
 
-[![Run on Repl.it](https://repl.it/badge/github/taniarascia/snek)](https://repl.it/github/taniarascia/snek)
+# Snake Client Project
 
-A terminal-based Snake implementation written in JavaScript (Node.js).
+Snake game is a very popular video game. It is a video game concept where the player maneuvers a dot and grows it by ‘eating’ pieces of food. As it moves and eats, it grows and the growing snake becomes an obstacle to smooth maneuvers. The goal is to grow it to become as big as possible without bumping into the side walls, or bumping into itself, upon which it dies.
 
-### [Read the tutorial](https://www.taniarascia.com/snake-game-in-javascript/)
+This is simply a multiplayer take on the genre.
 
-![snek.gif](https://raw.githubusercontent.com/taniarascia/snek/master/snek.gif)
+Before you can run this client, you will need to be running the server side which you can download and install from here. 
 
-## Instructions
+## Final Product
+!["snek.gif"]
 
-Use the arrow keys (`↑`, `↓`, `←`, `→`) or `W` `A` `S` `D` to navigate the snake up, down, left, or right. Eat the red dot to gain points. If the snake collides with the wall or its own tail, it's game over. Press `ENTER` to restart, and `Q`, `ESCAPE` or `CTRL` + `C` to quit the game.
+## Getting Started
 
-## Installation
-
-### Run without installing
-
-The easiest way to play the game is to just run it in the terminal without installing anything!
-
-```bash
-npx taniarascia/snek
-```
-
-### Clone from repository
-
-```bash
-git clone https://github.com/taniarascia/snek
-cd snek
-
-# install and run via npm or yarn
-npm i && npm run play
-```
-
-### npm module
-
-Add the `snekjs` module.
-
-```bash
-npm i snekjs
-```
-
-Create the game.
-
-```js
-// index.js
-const { UserInterface, Game } = require('snekjs')
-const game = new Game(new UserInterface())
-
-// Begin game
-game.start()
-```
-
-Run the game.
-
-```bash
-node index.js
-```
+- Follow steps inside the snek server repo to run the server side
+- Run the development snake client using the `node play.js` command.
 
 ## Acknowledgements
 

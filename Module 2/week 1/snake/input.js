@@ -5,7 +5,8 @@ let connection;
 const { stdin } = require("process");
 
 // setup interface to handle user input from stdin
-const setupInput = function (con) {
+const setupInput = function (conn) {
+  connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
@@ -15,13 +16,41 @@ const setupInput = function (con) {
 };
 
 const handleUserInput = function (key) {
-  // your code here
-  // Handle CTRL+C User Input
-  // \u0003 maps to ctrl+c input
-  if (key === '\u0003') {
-    console.log(`Exiting Program. Bye.`);
-    process.exit();
+
+  switch(key) {
+    // Handle CTRL+C User Input
+    // \u0003 maps to ctrl+c input
+    case `\u0003`:
+      connection.write(`Exiting Program. Bye.`);
+      process.exit();
+      break;
+
+    case `w`:
+      connection.write(`Move: Up`);
+
+      break;
+
+    case `a`:
+      connection.write(`Move LEFT`);
+
+      break;
+
+    case `s`:
+      connection.write(`Move LEFT`);
+
+      break;
+
+    case `d`:
+      connection.write(`Move LEFT`);
+
+      break;
+
+    default:
+      break;
+
+
   }
+
 };
 
 module.exports = {setupInput};

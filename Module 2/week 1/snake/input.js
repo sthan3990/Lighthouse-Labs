@@ -6,7 +6,6 @@ const { stdin } = require("process");
 
 // setup interface to handle user input from stdin
 const setupInput = function (con) {
-
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");

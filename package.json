@@ -2,6 +2,7 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
     "sqlite3": "^4.0.9"
   },
   "devDependencies": {

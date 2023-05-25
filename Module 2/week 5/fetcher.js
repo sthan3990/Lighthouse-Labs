@@ -12,6 +12,7 @@ const fetch = require('node-fetch');
 
 const downloadFile = (remotePath, localPath) => {
 
+  // check if the URL is valid
 
   fetch(remotePath)
     .then((response) => {
@@ -30,10 +31,11 @@ const downloadFile = (remotePath, localPath) => {
 
         if (!fs.existsSync(localPath)) {
           console.log(`Creating the file, it is ${data.length} bytes and saved to ${localPath}`);
-
           fs.writeFileSync(localPath, data);
         }
+
         else {
+
           fs.unlinkSync(localPath);
 
           console.log(`Creating the file, it is ${data.length} bytes and saved to ${localPath}`);
@@ -49,6 +51,5 @@ const downloadFile = (remotePath, localPath) => {
     });
 
 };
-
 
 downloadFile(`http://www.example.edu/`, `./index.html`);

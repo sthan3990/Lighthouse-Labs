@@ -1,30 +1,29 @@
-/**
- * @param {number} millis
- */
-async function sleep(millis) {
+// Generate a Random Short URL ID
+// Output: string of 6 random alphanumeric characters
+function generateRandomString() {
+  let shortURL = ``;
+  let letters = [
+    "A",
+    "B",
+    "C"
+  ];
+  const numbers = [
+    "1",
+    "2",
+    "3"
+  ];
 
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("foo");
-    }, millis);
-  });
+  for (let i = 0; i < 3; i++) {
+    let index1 = Math.floor(Math.random() * letters.length);
+    let index2 = Math.floor(Math.random() * numbers.length);
 
+    console.log(`${index1} ${index2}`);
+    shortURL = shortURL.concat(letters[index1],numbers[index2]);
+
+  }
+  console.log(shortURL);
+
+  return shortURL;
 };
 
-/** 
-* let t = Date.now()
-* sleep(100).then(() => console.log(Date.now() - t)) // 100
-*/
-
-async function main() {
-  sleep(100)
-    .then((data) => {
-      console.log(`Done Sleeping`);
-    })
-    .catch((err) => {
-      console.log(`\t-> Error: ${err}!`);
-    });
-}
-
-main();
-
+generateRandomString();

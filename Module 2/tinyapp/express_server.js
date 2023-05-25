@@ -7,6 +7,24 @@ const urlDatabase = {
   "9sm5xK": "http://www.google.com"
 };
 
+const generateURL = () => {
+  let string = ``;
+
+  for (let i = 0; i < 4; i ++) {
+    string += Math.floor(Math.random() * 59);
+  }
+
+   // check if URL already exists
+   if (urlDatabase[string]) {
+    string = generateURL();
+  } else {
+    return string;
+  }
+}
+
+
+
+
 app.get("/", (req, res) => {
   res.send("Hello!");
 });
